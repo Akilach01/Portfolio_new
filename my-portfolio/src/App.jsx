@@ -1,8 +1,22 @@
+import Navbar from "./components/Navbar";
+import Home from "./components/Home";
+import Work from "./components/Work";
+import About from "./components/About";
+import Gallery from "./components/Gallery";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
+
 function App() {
   return (
-    <div>
-      <h1>My Portfolio</h1>
-    </div>
+    <>
+      <Navbar />
+      <Home />
+      <Work />
+      <About />
+      <Gallery />
+      <Contact />
+      <Footer />
+    </>
   );
 }
 
