@@ -1,0 +1,11 @@
+#about {
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.skillset {
+    background: #252222;
+    padding: 10px;
+    border-radius: 10px;
+}
