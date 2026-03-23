@@ -1,3 +1,5 @@
+import "../components/styles/home.css";
+
 function Home() {
   return (
     <section id="home">

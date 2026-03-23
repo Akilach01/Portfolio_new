@@ -1,3 +1,5 @@
+import "../components/styles/navbar.css";
+
 function Navbar() {
   return (
     <nav>
