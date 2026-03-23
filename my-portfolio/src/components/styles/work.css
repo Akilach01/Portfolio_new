@@ -1,0 +1,14 @@
+#work {
+    background: linear-gradient(90deg,#6b3d8c, #3d3d3d,#2f2f2f);
+    padding: 50px;
+    text-align: center;
+}
+
+.projects {
+    display: flex;
+    gap: 50px;
+}
+
+.projects div:hover {
+    transform: scale(1.05);
+}
