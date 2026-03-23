@@ -1,0 +1,23 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(90deg, #2f2f2f, #3d3d3d, #6b3d8c);
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
