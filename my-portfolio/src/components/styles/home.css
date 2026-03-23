@@ -1,0 +1,31 @@
+#home {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 150px;
+}
+
+#home h1 {
+    font-size: 32px;
+    margin-left: 60px;
+}
+
+#home h2 {
+    font-size: 50px;
+    margin-left: 60px;
+}
+
+#home span {
+    color: #ffcc00;
+}
+
+#home p {
+    margin-left: 60px;
+    color: #ccc;
+}
+
+.profilepic {
+    width: 300px;
+    height: 350px;
+    border-radius: 50%;
+    border: 3px solid #ffcc00;
+}
