@@ -1,0 +1,9 @@
+#gallery {
+    text-align: center;
+    padding: 30px;
+}
+
+#gallery img {
+    width: 300px;
+    margin: 10px;
+}
