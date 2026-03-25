@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     background: linear-gradient(90deg, #2f2f2f, #3d3d3d, #6b3d8c);
@@ -7,17 +11,36 @@ body {
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 button {
     background-color: #28a745;
     color: #fff;
-    padding: 10px 20px;
+    padding: 12px 20px;
+    border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
 }
 
 button:hover {
     background-color: #218838;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+section {
+    scroll-margin-top: 70px;
+}
+
+@media (max-width: 768px) {
+    button {
+        padding: 10px 16px;
+        font-size: 12px;
+    }
 }

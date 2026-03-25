@@ -1,14 +1,130 @@
 #work {
     background: linear-gradient(90deg,#6b3d8c, #3d3d3d,#2f2f2f);
-    padding: 50px;
+    padding: 80px 50px;
     text-align: center;
+    margin-top: 60px;
+}
+
+#work h1 {
+    font-size: 40px;
+    margin-bottom: 50px;
+    color: #ffcc00;
 }
 
 .projects {
     display: flex;
-    gap: 50px;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.projects div {
+    flex: 1;
+    min-width: 250px;
+    max-width: 320px;
+    background: #1f1f1f;
+    padding: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s;
 }
 
 .projects div:hover {
     transform: scale(1.05);
+}
+
+.projects div h2 {
+    color: #ffcc00;
+    font-size: 20px;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.card-body img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    object-fit: cover;
+    aspect-ratio: 16/9;
+}
+
+.image-placeholder {
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(135deg, #2f2f2f, #3d3d3d);
+    border: 2px dashed #ffcc00;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ccc;
+    font-size: 12px;
+}
+
+.card-body p {
+    color: #ccc;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Tablet Responsiveness */
+@media (max-width: 1024px) {
+    #work {
+        padding: 60px 30px;
+    }
+
+    .projects {
+        gap: 20px;
+        justify-content: space-around;
+    }
+
+    .projects div {
+        min-width: 280px;
+        max-width: 300px;
+    }
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    #work {
+        padding: 50px 20px;
+        margin-top: 80px;
+    }
+
+    #work h1 {
+        font-size: 28px;
+    }
+
+    .projects {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .projects div {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 512px) {
+    #work {
+        padding: 40px 15px;
+    }
+
+    #work h1 {
+        font-size: 22px;
+    }
+
+    .projects div {
+        padding: 15px;
+    }
+
+    .card-body p {
+        font-size: 12px;
+    }
 }

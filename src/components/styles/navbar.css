@@ -1,11 +1,14 @@
 nav {
     display: flex;
     position: fixed;
+    top: 0;
     width: 100%;
     justify-content: space-between;
     align-items: center;
     background-color: #1f1f1f;
     padding: 5px 15px;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 nav img {
@@ -16,19 +19,108 @@ nav img {
 nav ul {
     list-style: none;
     display: flex;
-    gap: 10px;
+    gap: 30px;
 }
 
 nav ul li a {
     color: #fff;
     font-size: 18px;
     font-weight: bold;
+    transition: color 0.3s;
 }
 
 nav ul li a:hover {
     color: #ffcc00;
 }
 
+/* Hamburger Menu Styles */
 .hamburger {
     display: none;
+    flex-direction: column;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+    transition: all 0.3s ease;
+    display: block;
+}
+
+.hamburger.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.hamburger.active .line2 {
+    opacity: 0;
+}
+
+.hamburger.active .line3 {
+    transform: rotate(45deg) translate(-7px, -7px);
+}
+
+/* Tablet Responsiveness (768px and below) */
+@media (max-width: 768px) {
+    nav {
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+
+    nav img {
+        width: 50px;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    nav ul {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        flex-direction: column;
+        background-color: #1f1f1f;
+        width: 100%;
+        text-align: center;
+        gap: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+        padding: 0;
+        border-bottom: 2px solid #ffcc00;
+    }
+
+    nav ul.active {
+        max-height: 300px;
+        padding: 20px 0;
+    }
+
+    nav ul li {
+        padding: 15px 0;
+        border-bottom: 1px solid #333;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+/* Mobile Responsiveness (512px and below) */
+@media (max-width: 512px) {
+    nav {
+        padding: 8px;
+    }
+
+    nav img {
+        width: 45px;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+    }
 }
